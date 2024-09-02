@@ -39,10 +39,10 @@ Environment=PYTHONUNBUFFERED=1
 [Install]
 WantedBy=multi-user.target
 
-#### 3.- Reiniciar demonio
+*#### 3.- Reiniciar demonio
 sudo systemctl daemon-reload
 
-#### 4.- habilitar, iniciar y comprobar servicio
-sudo systemctl enable scriptFicheros.service 
-sudo systemctl start scriptFicheros.service 
-sudo systemctl status scriptFicheros.service 
+*#### 4.- habilitar, iniciar y comprobar servicio
+* sudo systemctl enable scriptFicheros.service 
+* sudo systemctl start scriptFicheros.service 
+* sudo systemctl status scriptFicheros.service 
