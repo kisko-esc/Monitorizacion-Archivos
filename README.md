@@ -19,7 +19,7 @@ Para el fichero log debes añadir la ruta en la que quieres que este en esta var
 fichero_log = f"{directorios[3]}/scripts/log.txt"
 
 
-Puedes configurar este script como un servicio, para ello puedes hacer esto:
+# Puedes configurar este script como un servicio, para ello puedes hacer esto:
 
 1.- crear el archivo de servicio en systemd
 sudo nano /etc/systemd/system/scriptFicheros.service
