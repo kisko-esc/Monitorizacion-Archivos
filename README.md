@@ -22,7 +22,7 @@ Para el fichero log debes añadir la ruta en la que quieres que este en esta var
 ## Puedes configurar este script como un servicio, para ello puedes hacer esto:
 
 #### 1.- crear el archivo de servicio en systemd
-sudo nano /etc/systemd/system/scriptFicheros.service
+* sudo nano /etc/systemd/system/scriptFicheros.service
 
 #### 2.- colocar lo siguiente:
 [Unit]
@@ -39,10 +39,10 @@ Environment=PYTHONUNBUFFERED=1
 [Install]
 WantedBy=multi-user.target
 
-*#### 3.- Reiniciar demonio
-sudo systemctl daemon-reload
+#### 3.- Reiniciar demonio
+* sudo systemctl daemon-reload
 
-*#### 4.- habilitar, iniciar y comprobar servicio
+#### 4.- habilitar, iniciar y comprobar servicio
 * sudo systemctl enable scriptFicheros.service 
 * sudo systemctl start scriptFicheros.service 
 * sudo systemctl status scriptFicheros.service 
