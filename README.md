@@ -22,7 +22,7 @@ Para el fichero log debes añadir la ruta en la que quieres que este en esta var
 ## Puedes configurar este script como un servicio, para ello puedes hacer esto:
 
 #### 1.- crear el archivo de servicio en systemd
-* sudo nano /etc/systemd/system/scriptFicheros.service
+* sudo nano /etc/systemd/system/script.service
 
 #### 2.- colocar lo siguiente:
 [Unit]
@@ -43,6 +43,6 @@ WantedBy=multi-user.target
 * sudo systemctl daemon-reload
 
 #### 4.- habilitar, iniciar y comprobar servicio
-* sudo systemctl enable scriptFicheros.service 
-* sudo systemctl start scriptFicheros.service 
-* sudo systemctl status scriptFicheros.service 
+* sudo systemctl enable script.service 
+* sudo systemctl start script.service 
+* sudo systemctl status script.service 
