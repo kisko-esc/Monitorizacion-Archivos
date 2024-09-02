@@ -2,10 +2,10 @@
 Este script hace uso de la libreria Watchdog de python para la monitorizacion de ficheros. 
 Además de enviar por correo alertas cuando un archivo que se ha creado o modificado cuenta con permisos elevados(777).
 
-###Para la parte del correo es necesario cambiar las variables:
+### Para la parte del correo es necesario cambiar las variables:
 #### CORREO = 'tu_correo'
 #### PASS = 'contraseña_aplicacion' -> se consigue al tener activado la doble autentificacion en seguridad en gmail y al buscar 'contraseña de aplicaciones'.
-####CORREO_DESTINO = 'correo_destino'
+#### CORREO_DESTINO = 'correo_destino'
 
 ### También se deben cambiar el contenido de las variables:
 #### ignorar_archivos = [] -> extensiones de archivos a ignorar, o si contienen algun tipo de carácteres/nombre
@@ -43,6 +43,6 @@ WantedBy=multi-user.target
 sudo systemctl daemon-reload
 
 #### 4.- habilitar, iniciar y comprobar servicio
-sudo systemctl enable scriptFicheros.service
-sudo systemctl start scriptFicheros.service
-sudo systemctl status scriptFicheros.service
+sudo systemctl enable scriptFicheros.service 
+sudo systemctl start scriptFicheros.service 
+sudo systemctl status scriptFicheros.service 
